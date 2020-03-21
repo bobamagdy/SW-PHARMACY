@@ -1,0 +1,57 @@
+﻿@model IEnumerable<SW_PHARMACY.Models.Credit>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Credit_Holder_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Credit_Expire)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Postal_Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CVV_Number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.FName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Credit_Holder_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Credit_Expire)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Postal_Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CVV_Number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.FName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Credit_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Credit_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Credit_id })
+        </td>
+    </tr>
+}
+
+</table>
