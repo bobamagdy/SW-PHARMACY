@@ -194,10 +194,17 @@
     <Content Include="App_Data\DBproject_log.ldf">
       <DependentUpon>DBproject.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\about.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap_noura.css" />
+    <Content Include="Content\footer.css" />
+    <Content Include="Content\index.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\Styles.css" />
+    <Content Include="Content\UserIndex.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -296,6 +303,8 @@
     <Content Include="Views\Carts\Details.cshtml" />
     <Content Include="Views\Carts\Edit.cshtml" />
     <Content Include="Views\Carts\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Shared\_LayoutUser.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

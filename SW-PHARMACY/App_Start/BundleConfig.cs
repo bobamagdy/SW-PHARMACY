@@ -23,7 +23,7 @@ namespace SW_PHARMACY
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap_noura.css",
                       "~/Content/site.css"));
         }
     }
