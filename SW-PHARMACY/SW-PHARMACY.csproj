@@ -132,9 +132,11 @@
     <Compile Include="Controllers\Cart_ProductController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\CreditsController.cs" />
+    <Compile Include="Controllers\Details_MedicinesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InventoriesController.cs" />
     <Compile Include="Controllers\LoginsController.cs" />
+    <Compile Include="Controllers\MedicinesController.cs" />
     <Compile Include="Controllers\PaymentsController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\RolesController.cs" />
@@ -311,6 +313,28 @@
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\Shared\_LayoutUser.cshtml" />
     <Content Include="Views\Products\ProductPage.cshtml" />
+    <Content Include="Views\Details_Medicines\First_Beauty.cshtml" />
+    <Content Include="Views\Details_Medicines\First_Hair.cshtml" />
+    <Content Include="Views\Details_Medicines\First_Med.cshtml" />
+    <Content Include="Views\Details_Medicines\First_Skin.cshtml" />
+    <Content Include="Views\Details_Medicines\First_Supp.cshtml" />
+    <Content Include="Views\Details_Medicines\Forth_Med.cshtml" />
+    <Content Include="Views\Details_Medicines\Forth_Skin.cshtml" />
+    <Content Include="Views\Details_Medicines\Second_Beauty.cshtml" />
+    <Content Include="Views\Details_Medicines\Second_Hair.cshtml" />
+    <Content Include="Views\Details_Medicines\Second_Med.cshtml" />
+    <Content Include="Views\Details_Medicines\Second_Skin.cshtml" />
+    <Content Include="Views\Details_Medicines\Second_Supp.cshtml" />
+    <Content Include="Views\Details_Medicines\Third_Beauty.cshtml" />
+    <Content Include="Views\Details_Medicines\Third_Hair.cshtml" />
+    <Content Include="Views\Details_Medicines\Third_Med.cshtml" />
+    <Content Include="Views\Details_Medicines\Third_Skin.cshtml" />
+    <Content Include="Views\Details_Medicines\Third_Supp.cshtml" />
+    <Content Include="Views\Medicines\Beauty.cshtml" />
+    <Content Include="Views\Medicines\Hair_Care.cshtml" />
+    <Content Include="Views\Medicines\Medication.cshtml" />
+    <Content Include="Views\Medicines\Skin_Care.cshtml" />
+    <Content Include="Views\Medicines\Supplements.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
