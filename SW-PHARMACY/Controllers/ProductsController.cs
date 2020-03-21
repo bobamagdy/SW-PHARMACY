@@ -7,12 +7,14 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using SW_PHARMACY.Models;
+using System.IO;
 
 namespace SW_PHARMACY.Controllers
 {
     public class ProductsController : Controller
     {
         private DBprojectEntities db = new DBprojectEntities();
+
 
         // GET: Products
         public ActionResult Index()
@@ -49,10 +51,18 @@ namespace SW_PHARMACY.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "prod_id,prod_name,Price,Prod_Image,Description,MGF_Date,Expiry_Date,Batch_No,Cate_Id,inventory_id")] Product product)
+        public ActionResult Create(Product product, HttpPostedFileBase Prod_Image)
         {
             if (ModelState.IsValid)
             {
+                String path = "";
+                if (Prod_Image.FileName.Length > 0)
+                {
+                    path = "~/Images/" + Path.GetFileName(Prod_Image.FileName);
+                    Prod_Image.SaveAs(Server.MapPath(path));
+                }
+                product.Prod_Image = path;
+
                 db.Products.Add(product);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -85,10 +95,19 @@ namespace SW_PHARMACY.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "prod_id,prod_name,Price,Prod_Image,Description,MGF_Date,Expiry_Date,Batch_No,Cate_Id,inventory_id")] Product product)
+        public ActionResult Edit([Bind(Include = "prod_id,prod_name,Price,Prod_Image,Description,MGF_Date,Expiry_Date,Batch_No,Cate_Id,inventory_id")] Product product, HttpPostedFileBase Prod_Image)
         {
             if (ModelState.IsValid)
             {
+                String path = "";
+                if (Prod_Image.FileName.Length > 0)
+                {
+                    path = "~/Images/" + Path.GetFileName(Prod_Image.FileName);
+                    Prod_Image.SaveAs(Server.MapPath(path));
+                }
+                product.Prod_Image = path;
+
+                db.Products.Add(product);
                 db.Entry(product).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -131,6 +150,11 @@ namespace SW_PHARMACY.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+        public ActionResult ProductPage()
+        {
+            var recs = db.Products.ToList();
+            return View(recs);
         }
     }
 }
