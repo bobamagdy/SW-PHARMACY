@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e0a6b17d163a4fa389905768127e9e05" Name="Diagram1">
+        <EntityTypeShape EntityType="DBprojectModel.Cart" Width="1.5" PointX="7.5" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBprojectModel.Cart_Product" Width="1.5" PointX="9.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBprojectModel.Category" Width="1.5" PointX="5.25" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBprojectModel.Credit" Width="1.5" PointX="7.5" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBprojectModel.Inventory" Width="1.5" PointX="5.25" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBprojectModel.Login" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBprojectModel.Payment" Width="1.5" PointX="9.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBprojectModel.Product" Width="1.5" PointX="7.5" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBprojectModel.Role" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBprojectModel.User" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="DBprojectModel.FK__Cart__User_Id__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="DBprojectModel.FK__Cart_Prod__Cart___35BCFE0A" ManuallyRouted="false" />
+        <AssociationConnector Association="DBprojectModel.FK__Payment__cart_id__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="DBprojectModel.FK__Cart_Prod__Prod___36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="DBprojectModel.FK__Product__Cate_Id__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="DBprojectModel.FK__Credit__User_Id__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="DBprojectModel.FK__Product__invento__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="DBprojectModel.FK__Login__Role_Id__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="DBprojectModel.FK__User__Login_Id__3C69FB99" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
