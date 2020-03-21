@@ -1,0 +1,39 @@
+﻿@model IEnumerable<SW_PHARMACY.Models.Product>
+
+@{
+    ViewBag.Title = "ProductPage";
+}
+
+<style>
+    .thumbnail:hover {
+        box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+        transform: scale(0.95);
+        transition: 0.5s;
+    }
+</style>
+
+<br />
+<br />
+
+<h2 style="color: #3498db; font-weight: lighter; border-bottom: 4px solid #3498db; text-transform: uppercase; font-size: 20px; font-weight: bold; text-align: center; ">OUR PRODUCTS</h2>
+<br />
+<div class="row">
+
+    @foreach (var item in Model)
+    {
+
+    <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+
+            <img src="@Url.Content(item.Prod_Image)" alt="..." width="600" height="500">
+
+        </a>
+        <a href="#" >
+            <h1 style="text-align:center; font-size:x-large; font-weight:500; font-stretch:extra-expanded"> @item.prod_name</h1>
+            </a>
+    </div>
+
+
+    }
+
+</div>

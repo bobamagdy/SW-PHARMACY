@@ -310,6 +310,7 @@
     <Content Include="Views\Carts\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\Shared\_LayoutUser.cshtml" />
+    <Content Include="Views\Products\ProductPage.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
