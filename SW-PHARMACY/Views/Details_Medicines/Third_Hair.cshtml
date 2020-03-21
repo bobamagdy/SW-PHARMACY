@@ -1,0 +1,246 @@
+﻿
+@{
+    ViewBag.Title = "BIO BALANCE";
+}
+
+
+
+<script type="text/javascript">
+        $(':radio').change(function () {
+            console.log('New star rating: ' + this.value);
+        });
+</script>
+<style>
+    .about_area {
+        background-color: honeydew
+    }
+
+        .about_area .border_1px {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #EAEAEA;
+            padding-bottom: 40px;
+        }
+
+    .project_details_info .border_1px {
+        border-top: 1px solid #DEE0E3;
+        padding-top: 30px;
+    }
+
+    .boxed-btn3 {
+        background: #F0542C;
+        color: #fff;
+        display: inline-block;
+        padding: 19px 50px;
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        border: 0;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+        .boxed-btn3:hover {
+            background: #001D38;
+            color: #fff !important;
+        }
+
+        .boxed-btn3:focus {
+            outline: none;
+        }
+
+    .first_para {
+        font-size: 17px;
+        margin-top: 15px;
+        color: darkblue
+    }
+
+    .name-med {
+        text-align: center;
+        color: darkblue
+    }
+
+    .rating {
+        display: inline-block;
+        position: relative;
+        height: 50px;
+        line-height: 50px;
+        font-size: 50px;
+    }
+
+        .rating label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            cursor: pointer;
+        }
+
+            .rating label:last-child {
+                position: static;
+            }
+
+            .rating label:nth-child(1) {
+                z-index: 5;
+            }
+
+            .rating label:nth-child(2) {
+                z-index: 4;
+            }
+
+            .rating label:nth-child(3) {
+                z-index: 3;
+            }
+
+            .rating label:nth-child(4) {
+                z-index: 2;
+            }
+
+            .rating label:nth-child(5) {
+                z-index: 1;
+            }
+
+            .rating label input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+            }
+
+            .rating label .icon {
+                float: left;
+                color: transparent;
+                font-size: 25px
+            }
+
+            .rating label:last-child .icon {
+                color: #000;
+            }
+
+        .rating:not(:hover) label input:checked ~ .icon,
+        .rating:hover label:hover input ~ .icon {
+            color: #09f;
+        }
+
+        .rating label input:focus:not(:checked) ~ .icon:last-child {
+            color: #000;
+            text-shadow: 0 0 5px #09f;
+        }
+
+    #borderimg2 {
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image: url(~/image/border.jpg) 30 stretch;
+    }
+
+    .about_thumb {
+        background-color: white;
+        overflow: hidden;
+    }
+
+        .about_thumb > img {
+            object-fit: cover;
+            width: 100%;
+            height: 40%;
+            transition: all .3s ease-in-out;
+        }
+
+        .about_thumb:hover > img {
+            transform: scale(1.2);
+        }
+</style>
+
+<h1 style="        text-align: center;
+        font-family: Verdana;
+        color: cornflowerblue
+">
+    Hair Care
+</h1>
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#" style="font-size: x-large">Medicines</a></li>
+    <li class="breadcrumb-item"><a href="http://localhost:62454/Medicines/Hair_Care" style="font-size: large">Hair Care</a></li>
+    <li class="breadcrumb-item active" style="font-size: medium">Details</li>
+</ol>
+
+<!-- about_area_start  -->
+<div class="about_area">
+    <div class="container">
+        <div class="border_1px">
+            <h2 class="name-med">
+                BIO BALANCE CITRUS SHAMPOO 
+            </h2>
+            <div class="row align-items-center">
+                <div class="col-xl-6  col-md-6">
+                    <div class="about_thumb">
+                        <img id="borderimg2" src="~/image/ha-3.png" style="width:550px;min-height:300px" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6">
+
+                    <div class="about_info" style="margin-top:100px;color:black">
+                        <p class="first_para">
+                            Perfect For Dry And Brittle Hair<br>
+                            Soothes Dry Scalp, Moisturizers And Strengths Breakage-Prone Hair<br>
+                            It Helps To: Hydrate, Nourish And Smoothe The Dry Hair And Scalp
+                        </p>
+                        <p class="first_para">
+                            Prevent Dryness And Breakage Of The Hair And Scalp<br>
+                            Resist Fall Out From Day One<br>
+                            Seal In Moisture And Restore Shine To Hair
+                        </p>
+                        <p class="first_para">
+                            150 ml
+                            <br>
+                            98.00 EGP
+                        </p>
+                        <form class="rating">
+                            <label>
+                                <input type="radio" name="stars" value="1" />
+                                <span class="icon">★</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="stars" value="2" />
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="stars" value="3" />
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="stars" value="4" />
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="stars" value="5" />
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                            </label>
+                        </form>
+                    </div>
+                    <a href="about.html" class="boxed-btn3 " style="margin-top:20px;text-align:center">Add to Cart</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- about_area_end  -->
