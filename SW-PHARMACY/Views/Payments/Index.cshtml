@@ -1,0 +1,45 @@
+﻿@model IEnumerable<SW_PHARMACY.Models.Payment>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.total)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cart.cart_id)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.total)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cart.cart_id)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.payment_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.payment_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.payment_id })
+        </td>
+    </tr>
+}
+
+</table>
