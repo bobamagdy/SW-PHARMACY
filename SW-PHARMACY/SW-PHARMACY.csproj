@@ -154,6 +154,8 @@
     <Compile Include="Models\Credit.cs">
       <DependentUpon>DBprojectModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\CustomizeInventory.cs" />
+    <Compile Include="Models\CustomizeProduct.cs" />
     <Compile Include="Models\DBprojectModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -175,6 +177,7 @@
     <Compile Include="Models\Login.cs">
       <DependentUpon>DBprojectModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Metadata.cs" />
     <Compile Include="Models\Payment.cs">
       <DependentUpon>DBprojectModel.tt</DependentUpon>
     </Compile>
@@ -184,6 +187,7 @@
     <Compile Include="Models\Role.cs">
       <DependentUpon>DBprojectModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\SiteRole.cs" />
     <Compile Include="Models\User.cs">
       <DependentUpon>DBprojectModel.tt</DependentUpon>
     </Compile>
@@ -209,6 +213,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\logo.jpg" />
     <Content Include="Models\DBprojectModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>DBprojectModel.Context.cs</LastGenOutput>
